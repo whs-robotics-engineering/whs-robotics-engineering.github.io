@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section 3 Electrical Concepts | Robotics Engineering</title>
+  <meta name="description" content="During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content." />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section 3 Electrical Concepts | Robotics Engineering" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 3 Electrical Concepts | Robotics Engineering" />
+  
+  <meta name="twitter:description" content="During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content." />
+  
+
+<meta name="author" content="Steve Cline" />
+
+
+<meta name="date" content="2020-07-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="mechanical-design.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<div>  </div>
+<img src="WHSROBO.png" style="width:230px;height:260px;" class="center">
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#a-brief-overview-of-the-course"><i class="fa fa-check"></i><b>2.1</b> A brief Overview of the Course</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#history-of-robotics"><i class="fa fa-check"></i><b>2.2</b> History of Robotics</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="electrical-concepts.html"><a href="electrical-concepts.html"><i class="fa fa-check"></i><b>3</b> Electrical Concepts</a><ul>
+<li class="chapter" data-level="3.1" data-path="electrical-concepts.html"><a href="electrical-concepts.html#circuits"><i class="fa fa-check"></i><b>3.1</b> Circuits</a></li>
+<li class="chapter" data-level="3.2" data-path="electrical-concepts.html"><a href="electrical-concepts.html#voltage-and-current"><i class="fa fa-check"></i><b>3.2</b> Voltage and Current</a></li>
+<li class="chapter" data-level="3.3" data-path="electrical-concepts.html"><a href="electrical-concepts.html#resistance"><i class="fa fa-check"></i><b>3.3</b> Resistance</a></li>
+<li class="chapter" data-level="3.4" data-path="electrical-concepts.html"><a href="electrical-concepts.html#ohms-law"><i class="fa fa-check"></i><b>3.4</b> Ohm’s Law</a></li>
+<li class="chapter" data-level="3.5" data-path="electrical-concepts.html"><a href="electrical-concepts.html#using-a-digital-multimeter"><i class="fa fa-check"></i><b>3.5</b> Using a Digital Multimeter</a></li>
+<li class="chapter" data-level="3.6" data-path="electrical-concepts.html"><a href="electrical-concepts.html#basic-soldering"><i class="fa fa-check"></i><b>3.6</b> Basic Soldering</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="mechanical-design.html"><a href="mechanical-design.html"><i class="fa fa-check"></i><b>4</b> Mechanical Design</a><ul>
+<li class="chapter" data-level="4.1" data-path="mechanical-design.html"><a href="mechanical-design.html#parts-of-a-robotic-system"><i class="fa fa-check"></i><b>4.1</b> Parts of a Robotic System</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="mechanical-design.html"><a href="mechanical-design.html#power-supply"><i class="fa fa-check"></i><b>4.1.1</b> Power Supply</a></li>
+<li class="chapter" data-level="4.1.2" data-path="mechanical-design.html"><a href="mechanical-design.html#actuators"><i class="fa fa-check"></i><b>4.1.2</b> Actuators</a></li>
+<li class="chapter" data-level="4.1.3" data-path="mechanical-design.html"><a href="mechanical-design.html#sensors"><i class="fa fa-check"></i><b>4.1.3</b> Sensors</a></li>
+<li class="chapter" data-level="4.1.4" data-path="mechanical-design.html"><a href="mechanical-design.html#microprocessors"><i class="fa fa-check"></i><b>4.1.4</b> Microprocessors</a></li>
+<li class="chapter" data-level="4.1.5" data-path="mechanical-design.html"><a href="mechanical-design.html#structural-parts"><i class="fa fa-check"></i><b>4.1.5</b> Structural Parts</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="mechanical-design.html"><a href="mechanical-design.html#computer-aided-design"><i class="fa fa-check"></i><b>4.2</b> Computer Aided Design</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="python-programming.html"><a href="python-programming.html"><i class="fa fa-check"></i><b>5</b> Python Programming</a><ul>
+<li class="chapter" data-level="5.1" data-path="python-programming.html"><a href="python-programming.html#setting-up-the-raspberry-pi"><i class="fa fa-check"></i><b>5.1</b> Setting up the Raspberry Pi</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="python-programming.html"><a href="python-programming.html#putting-the-pi-together"><i class="fa fa-check"></i><b>5.1.1</b> Putting the Pi Together</a></li>
+<li class="chapter" data-level="5.1.2" data-path="python-programming.html"><a href="python-programming.html#controlling-the-pi-with-ssh"><i class="fa fa-check"></i><b>5.1.2</b> Controlling the Pi with SSH</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="python-programming.html"><a href="python-programming.html#the-parts-of-the-rpi-and-pinout"><i class="fa fa-check"></i><b>5.2</b> The parts of the RPi and Pinout</a></li>
+<li class="chapter" data-level="5.3" data-path="python-programming.html"><a href="python-programming.html#why-python"><i class="fa fa-check"></i><b>5.3</b> Why Python?</a></li>
+<li class="chapter" data-level="5.4" data-path="python-programming.html"><a href="python-programming.html#hello-worldand-a-little-more"><i class="fa fa-check"></i><b>5.4</b> Hello, World…and a Little More</a></li>
+<li class="chapter" data-level="5.5" data-path="python-programming.html"><a href="python-programming.html#functions"><i class="fa fa-check"></i><b>5.5</b> Functions</a></li>
+<li class="chapter" data-level="5.6" data-path="python-programming.html"><a href="python-programming.html#conditionals"><i class="fa fa-check"></i><b>5.6</b> Conditionals</a></li>
+<li class="chapter" data-level="5.7" data-path="python-programming.html"><a href="python-programming.html#iteration"><i class="fa fa-check"></i><b>5.7</b> Iteration</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="python-programming.html"><a href="python-programming.html#for-loops"><i class="fa fa-check"></i><b>5.7.1</b> <code>for</code> Loops</a></li>
+<li class="chapter" data-level="5.7.2" data-path="python-programming.html"><a href="python-programming.html#while-loops"><i class="fa fa-check"></i><b>5.7.2</b> <code>while</code> Loops</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="robotic-types.html"><a href="robotic-types.html"><i class="fa fa-check"></i><b>6</b> Robotic Types</a></li>
+<li class="chapter" data-level="7" data-path="capstone-project.html"><a href="capstone-project.html"><i class="fa fa-check"></i><b>7</b> Capstone Project</a></li>
+<li class="chapter" data-level="8" data-path="going-further-with-robotics.html"><a href="going-further-with-robotics.html"><i class="fa fa-check"></i><b>8</b> Going Further with Robotics</a><ul>
+<li class="chapter" data-level="8.1" data-path="going-further-with-robotics.html"><a href="going-further-with-robotics.html#robotics-in-higher-education"><i class="fa fa-check"></i><b>8.1</b> Robotics in Higher Education</a></li>
+<li class="chapter" data-level="8.2" data-path="going-further-with-robotics.html"><a href="going-further-with-robotics.html#supplemental-videos"><i class="fa fa-check"></i><b>8.2</b> Supplemental Videos</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html"><i class="fa fa-check"></i><b>9</b> Course Materials and Instructions</a><ul>
+<li class="chapter" data-level="9.1" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#course-lecture-notes"><i class="fa fa-check"></i><b>9.1</b> Course Lecture Notes</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#introduction"><i class="fa fa-check"></i><b>9.1.1</b> Introduction</a></li>
+<li class="chapter" data-level="9.1.2" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#electronics"><i class="fa fa-check"></i><b>9.1.2</b> Electronics</a></li>
+<li class="chapter" data-level="9.1.3" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#programming"><i class="fa fa-check"></i><b>9.1.3</b> Programming</a></li>
+<li class="chapter" data-level="9.1.4" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#robotics-concepts"><i class="fa fa-check"></i><b>9.1.4</b> Robotics Concepts</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#using-github"><i class="fa fa-check"></i><b>9.2</b> Using GitHub</a></li>
+<li class="chapter" data-level="9.3" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#think-python-textbook"><i class="fa fa-check"></i><b>9.3</b> Think Python Textbook</a></li>
+<li class="chapter" data-level="9.4" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#all-about-circuits-textbook"><i class="fa fa-check"></i><b>9.4</b> All About Circuits Textbook</a></li>
+<li class="chapter" data-level="9.5" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#onshape-account-setup"><i class="fa fa-check"></i><b>9.5</b> OnShape Account Setup</a></li>
+<li class="chapter" data-level="9.6" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#controlling-the-raspberry-pi-remotely"><i class="fa fa-check"></i><b>9.6</b> Controlling the Raspberry Pi Remotely</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#setting-up-ssh-for-windows"><i class="fa fa-check"></i><b>9.6.1</b> Setting up SSH for Windows</a></li>
+<li class="chapter" data-level="9.6.2" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#setting-up-ssh-for-mac-or-linux"><i class="fa fa-check"></i><b>9.6.2</b> Setting up SSH for Mac or Linux</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Robotics Engineering</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="electrical-concepts" class="section level1">
+<h1><span class="header-section-number">Section 3</span> Electrical Concepts</h1>
+<p>This class and modern life relies heavily on electricity and electronics. Our course electronics text points this out quite eloquently:</p>
+<p>
+<i>The history of electricity starts more than two thousand years ago, with the Greek philosopher Thales being the earliest known researcher into electricity. But it was Alessandro Volta who created the most common DC power source, the battery (for this invention the unit Volt was named after him).
+</p>
+<p>
+Direct current (also known as DC) is the flow of charged particles in one unchanging direction (most commonly found as electron flow through conductive materials). DC can be found in just about every home and electronic device, as it is more practical (compared to AC from power stations) for many consumer devices. Just a few of the places where you can find direct current are batteries, phones, computers, cars, TVs, calculators, and even lightning.</i>
+</p>
+<p>
+We will begin exploring a number of concepts relating to electricity as we will essentially be using electrons as our modes of information processing. From the electrons that flow through a button or distance sensor to be read by the microprocessor to those which supply the power for our motors and servos, we are heavily dependent on electricity. Before we get into this, we need to go over some very important concepts. Take out your Raspberry Pi and follow along with the video below.
+</p>
+Video here
+<br>
+<br>
+<b>Rules of this course in regards to electricity:</b>
+<ol>
+<li>
+Always work only with DC electricity, never use AC voltage except for when you plug your Raspberry Pi into the outlet.
+</li>
+<li>
+Always work on your circuits when the devices are unplugged and batteries removed. Not only is this a safety issue, it will prevent the need to replace electrical components
+</li>
+<li>
+Only use the components listed in the laboratory activity on which you are working. Do not try new components you have never used before or are unfamiliar with.
+</li>
+<li>
+Keep your work area clean and uncluttered. Do not keep beverages on your workstation.
+</li>
+</ol>
+<p><b>Using EasyEDA for circuit design</b></p>
+<p>There are many useful tools available to help with circuit design. During this course we will need to learn to use some of them. Circuit schematics make it easy for us to design and interpret circuits to communicate our project. For this class we will use EasyEDA. We can run it in a web browser. It allows us to save projects to a free account and share them for submission. If you learn how to use it well enough you may also use it to design your own printed circuit boards (PCB) to make your own components.</p>
+<p>Go to the <a href="https://easyeda.com/editor" target ="_blank">EasyEDA editor website</a>. Create an account. While you may be able to just start using it and learn through trial and error, here are a few tutorials that will become useful which may be found in the <a href="https://docs.easyeda.com/en/FAQ/Editor/index.html" target ="_blank">Tutorials</a> section of the app:</p>
+<ul>
+<li>
+Introduction to EasyEDA
+</li>
+<li>
+UI Introduction
+</li>
+<li>
+Create a New Project or File
+</li>
+<li>
+Schematic Capture
+</li>
+<li>
+Basic Skills
+</li>
+</ul>
+<p>You should spend some time learning how to use this app. We will begin using it soon and you will learn how to read an electronics schematic, by designing them yourself. Once you have set up your account and learned some basics, complete the following assignment:</p>
+<p><b>Assignment 3.0</b><br></p>
+<p>Using your newly discovered schematic design skills, you will make your own basic schematic. Watch this <a href="https://www.youtube.com/watch?v=9cps7Q_IrX0" target ="_blank">short tutorial explaining schematics</a>. Create and save a schematic in EasyEDA with the following components in a circuit:</p>
+<ul>
+<li>
+5V power supply
+</li>
+<li>
+220 Ohm Resistor
+</li>
+<li>
+Blue LED
+</li>
+<li>
+Ground
+</li>
+</ul>
+<div id="circuits" class="section level2">
+<h2><span class="header-section-number">3.1</span> Circuits</h2>
+<p>A basic understanding of circuit electricity is essential going forward. For this section of the course, we will begin using our online textbook. It gives us an excellent overview of electrons, circuits and polarity. Please keep in mind that, in order to begin using the Raspberry Pi (i.e. receiving the power supply) you will need to pass all of the required quizzes with at least a 70%.</p>
+<p><b>Key Concepts of Section 3.1</b></p>
+<ul>
+<li>
+A circuit is a loop of conductive material.
+</li>
+<li>
+In order for electrons to flow a <i>closed circuit</i> is required.
+</li>
+<li>
+A circuit is <i>open</i> or <i>broken</i> if a complete path for the electrons to flow no longer exists.
+</li>
+</ul>
+<p>Rather than me trying to do a better job than our textbook, you are going to read the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/electric-circuits/" target="_blank">short section on circuits</a>. These questions will be similar to those that you will see on your unit exam (The one you need at least a 70% on to move on). So…that means that you are not completing this worksheet for a grade. Instead, you are trying to measure how well you learned the concepts in the reading. Much of this year’s content will be delivered this way. Get your head around the idea of learning for the sake of learning.</p>
+<p>To help you understand this concept, here is an excellent video from SparkFun Electronics on the topic.</p>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/kYwNj9uauJ4">
+</iframe>
+<br>
+<b>Assignment 3.1</b><br>
+<ol>
+<li>
+After reading the section on circuits, complete the <a href="https://www.allaboutcircuits.com/worksheets/elementary-circuits/online" target="_blank">worksheet</a>
+</li>
+<li>
+Using EasyEDA, design a closed circuit with the following components:
+</li>
+<ul>
+<li>
+5V power supply
+</li>
+<li>
+220 Ohm Resistor
+</li>
+<li>
+Blue LED
+</li>
+<li>
+Ground
+</li>
+</ul>
+</ol>
+<p>Submit the your work on GitHub through Assignment 3.1.</p>
+</div>
+<div id="voltage-and-current" class="section level2">
+<h2><span class="header-section-number">3.2</span> Voltage and Current</h2>
+<p>The movement of electrons from one pole to another is what we use in robotics to make our robots work. By altering the volume of electrons moving through the wires connected to a motor we can alter the speed of the wheel attached to the motor. The potential energy coming in to our microprocessor pin over a wire attached to a photoresistor tells us the level of brightness or lumosity in a room. Putting these two concepts together we could create a robotic system that opens the blinds on our lab when the sun sets in the west. That is, of course, if we can program our system to make that decision on its own. We will get to the programming part later. For now, we will examine the concepts of voltage and current which allow us, along with resistance, to receive information through sensor and send information out to an actuation device like a motor.</p>
+<p>Read <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">short section on voltage and current</a>. Be sure to review the concepts at the bottom of the page for understanding.</p>
+<p>To help you understand this concept, here is an excellent video from SparkFun Electronics on the topic.</p>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/z8qfhFXjsrw">
+</iframe>
+<p><br></p>
+</div>
+<div id="resistance" class="section level2">
+<h2><span class="header-section-number">3.3</span> Resistance</h2>
+<p>The final concept needed to understand how electricity in a DC circuit may be used to control devices is resistance. One day last year I was sitting in my office upstairs. I had just come from the mechatronics lab and had packed a bunch of supplies from the lab into my backpack so I could do a little work on a demonstration I would be giving later in the week. All of a sudden I smelled smoke. I looked down and it was coming from my backpack! After digging around a bit I found the culprit. I had put a battery pack in my bag like the one here:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/battery_pack_full.jpg?raw=true"></p>
+<p>Can you see the problem? I had left all of the batteries in the pack. When I threw it in my bag, the red and black leads touched and starte what is know as a <a href="https://en.wikipedia.org/wiki/Short_circuit" target ="_blank">short circuit</a>. With no resistance on the flow of electrons through the wires. The by product of this rapid flow was heat which began to melt the inside of my backpack and start it smoking. Remember this example and always pull one battery out of your battery packs when not connected to your device. Also, never connect two poles of a power source without any resistance. It can cause serious injury.</p>
+<p>This problem is prevented by placing a resistive force on the circuit. Small electrical components like LEDs and sensors cannot handle even the two amperes of current available from the Raspberry Pi’s 5V pin. A reisistor is used to prevent the LED from burning up. In order to understand how resistance works, read <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">short section on resistance</a>.</p>
+<b>Assignment 3.3</b><br>
+<ol>
+<li>
+After reading the section on circuits, complete the <a href="https://www.allaboutcircuits.com/worksheets/voltage-current-and-resistance" target="_blank">worksheet</a>
+</li>
+</div>
+<div id="ohms-law" class="section level2">
+<h2><span class="header-section-number">3.4</span> Ohm’s Law</h2>
+<p>All three of these concepts come together in Ohm’s Law. In the 19th century many scientists were experimenting with electricity in an attempt to understand it. One of these scientists, Georg Ohm, determined that there was a relationship between Voltage, Current and Resistance. This is why an LED burns up (receives too much current) when no resistance is placed on the circuit. If we create resistance on the circuit with a resistor the voltage, or potential energy, remains constant but the current decreases. Ohm’s law is represented by this simple formula:</p>
+<p><span class="math display">\[V = I * R\]</span>
+As we will see, this formula is quite handy. It may be rearranged to solve for any one of the three possible outputs (V-voltage, I-current, R-resistance). In order to understand how resistance works, read <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current-resistance-relate/" target="_blank">short section on Ohm’s Law</a>.</p>
+<p>To help you understand this concept, here is an excellent video from SparkFun Electronics on the topic.</p>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/8jB6hDUqN0Y">
+</iframe>
+<p><br></p>
+<b>Assignment 3.4</b><br>
+<ol>
+<li>
+After reading the section on circuits, complete the <a href="https://www.allaboutcircuits.com/worksheets/ohms-law" target="_blank">worksheet</a>
+</li>
+</div>
+<div id="using-a-digital-multimeter" class="section level2">
+<h2><span class="header-section-number">3.5</span> Using a Digital Multimeter</h2>
+<p>This section will become active in the event that we are not using remote instruction.</p>
+</div>
+<div id="basic-soldering" class="section level2">
+<h2><span class="header-section-number">3.6</span> Basic Soldering</h2>
+<p>This section will become active in the event that we are not using remote instruction.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="mechanical-design.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-electrical.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Robotics_Engineering.pdf", "Robotics_Engineering.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

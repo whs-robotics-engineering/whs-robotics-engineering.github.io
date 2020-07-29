@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section 4 Mechanical Design | Robotics Engineering</title>
+  <meta name="description" content="During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content." />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section 4 Mechanical Design | Robotics Engineering" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 4 Mechanical Design | Robotics Engineering" />
+  
+  <meta name="twitter:description" content="During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content." />
+  
+
+<meta name="author" content="Steve Cline" />
+
+
+<meta name="date" content="2020-07-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="electrical-concepts.html"/>
+<link rel="next" href="python-programming.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<div>  </div>
+<img src="WHSROBO.png" style="width:230px;height:260px;" class="center">
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#a-brief-overview-of-the-course"><i class="fa fa-check"></i><b>2.1</b> A brief Overview of the Course</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#history-of-robotics"><i class="fa fa-check"></i><b>2.2</b> History of Robotics</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="electrical-concepts.html"><a href="electrical-concepts.html"><i class="fa fa-check"></i><b>3</b> Electrical Concepts</a><ul>
+<li class="chapter" data-level="3.1" data-path="electrical-concepts.html"><a href="electrical-concepts.html#circuits"><i class="fa fa-check"></i><b>3.1</b> Circuits</a></li>
+<li class="chapter" data-level="3.2" data-path="electrical-concepts.html"><a href="electrical-concepts.html#voltage-and-current"><i class="fa fa-check"></i><b>3.2</b> Voltage and Current</a></li>
+<li class="chapter" data-level="3.3" data-path="electrical-concepts.html"><a href="electrical-concepts.html#resistance"><i class="fa fa-check"></i><b>3.3</b> Resistance</a></li>
+<li class="chapter" data-level="3.4" data-path="electrical-concepts.html"><a href="electrical-concepts.html#ohms-law"><i class="fa fa-check"></i><b>3.4</b> Ohm’s Law</a></li>
+<li class="chapter" data-level="3.5" data-path="electrical-concepts.html"><a href="electrical-concepts.html#using-a-digital-multimeter"><i class="fa fa-check"></i><b>3.5</b> Using a Digital Multimeter</a></li>
+<li class="chapter" data-level="3.6" data-path="electrical-concepts.html"><a href="electrical-concepts.html#basic-soldering"><i class="fa fa-check"></i><b>3.6</b> Basic Soldering</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="mechanical-design.html"><a href="mechanical-design.html"><i class="fa fa-check"></i><b>4</b> Mechanical Design</a><ul>
+<li class="chapter" data-level="4.1" data-path="mechanical-design.html"><a href="mechanical-design.html#parts-of-a-robotic-system"><i class="fa fa-check"></i><b>4.1</b> Parts of a Robotic System</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="mechanical-design.html"><a href="mechanical-design.html#power-supply"><i class="fa fa-check"></i><b>4.1.1</b> Power Supply</a></li>
+<li class="chapter" data-level="4.1.2" data-path="mechanical-design.html"><a href="mechanical-design.html#actuators"><i class="fa fa-check"></i><b>4.1.2</b> Actuators</a></li>
+<li class="chapter" data-level="4.1.3" data-path="mechanical-design.html"><a href="mechanical-design.html#sensors"><i class="fa fa-check"></i><b>4.1.3</b> Sensors</a></li>
+<li class="chapter" data-level="4.1.4" data-path="mechanical-design.html"><a href="mechanical-design.html#microprocessors"><i class="fa fa-check"></i><b>4.1.4</b> Microprocessors</a></li>
+<li class="chapter" data-level="4.1.5" data-path="mechanical-design.html"><a href="mechanical-design.html#structural-parts"><i class="fa fa-check"></i><b>4.1.5</b> Structural Parts</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="mechanical-design.html"><a href="mechanical-design.html#computer-aided-design"><i class="fa fa-check"></i><b>4.2</b> Computer Aided Design</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="python-programming.html"><a href="python-programming.html"><i class="fa fa-check"></i><b>5</b> Python Programming</a><ul>
+<li class="chapter" data-level="5.1" data-path="python-programming.html"><a href="python-programming.html#setting-up-the-raspberry-pi"><i class="fa fa-check"></i><b>5.1</b> Setting up the Raspberry Pi</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="python-programming.html"><a href="python-programming.html#putting-the-pi-together"><i class="fa fa-check"></i><b>5.1.1</b> Putting the Pi Together</a></li>
+<li class="chapter" data-level="5.1.2" data-path="python-programming.html"><a href="python-programming.html#controlling-the-pi-with-ssh"><i class="fa fa-check"></i><b>5.1.2</b> Controlling the Pi with SSH</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="python-programming.html"><a href="python-programming.html#the-parts-of-the-rpi-and-pinout"><i class="fa fa-check"></i><b>5.2</b> The parts of the RPi and Pinout</a></li>
+<li class="chapter" data-level="5.3" data-path="python-programming.html"><a href="python-programming.html#why-python"><i class="fa fa-check"></i><b>5.3</b> Why Python?</a></li>
+<li class="chapter" data-level="5.4" data-path="python-programming.html"><a href="python-programming.html#hello-worldand-a-little-more"><i class="fa fa-check"></i><b>5.4</b> Hello, World…and a Little More</a></li>
+<li class="chapter" data-level="5.5" data-path="python-programming.html"><a href="python-programming.html#functions"><i class="fa fa-check"></i><b>5.5</b> Functions</a></li>
+<li class="chapter" data-level="5.6" data-path="python-programming.html"><a href="python-programming.html#conditionals"><i class="fa fa-check"></i><b>5.6</b> Conditionals</a></li>
+<li class="chapter" data-level="5.7" data-path="python-programming.html"><a href="python-programming.html#iteration"><i class="fa fa-check"></i><b>5.7</b> Iteration</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="python-programming.html"><a href="python-programming.html#for-loops"><i class="fa fa-check"></i><b>5.7.1</b> <code>for</code> Loops</a></li>
+<li class="chapter" data-level="5.7.2" data-path="python-programming.html"><a href="python-programming.html#while-loops"><i class="fa fa-check"></i><b>5.7.2</b> <code>while</code> Loops</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="robotic-types.html"><a href="robotic-types.html"><i class="fa fa-check"></i><b>6</b> Robotic Types</a></li>
+<li class="chapter" data-level="7" data-path="capstone-project.html"><a href="capstone-project.html"><i class="fa fa-check"></i><b>7</b> Capstone Project</a></li>
+<li class="chapter" data-level="8" data-path="going-further-with-robotics.html"><a href="going-further-with-robotics.html"><i class="fa fa-check"></i><b>8</b> Going Further with Robotics</a><ul>
+<li class="chapter" data-level="8.1" data-path="going-further-with-robotics.html"><a href="going-further-with-robotics.html#robotics-in-higher-education"><i class="fa fa-check"></i><b>8.1</b> Robotics in Higher Education</a></li>
+<li class="chapter" data-level="8.2" data-path="going-further-with-robotics.html"><a href="going-further-with-robotics.html#supplemental-videos"><i class="fa fa-check"></i><b>8.2</b> Supplemental Videos</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html"><i class="fa fa-check"></i><b>9</b> Course Materials and Instructions</a><ul>
+<li class="chapter" data-level="9.1" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#course-lecture-notes"><i class="fa fa-check"></i><b>9.1</b> Course Lecture Notes</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#introduction"><i class="fa fa-check"></i><b>9.1.1</b> Introduction</a></li>
+<li class="chapter" data-level="9.1.2" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#electronics"><i class="fa fa-check"></i><b>9.1.2</b> Electronics</a></li>
+<li class="chapter" data-level="9.1.3" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#programming"><i class="fa fa-check"></i><b>9.1.3</b> Programming</a></li>
+<li class="chapter" data-level="9.1.4" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#robotics-concepts"><i class="fa fa-check"></i><b>9.1.4</b> Robotics Concepts</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#using-github"><i class="fa fa-check"></i><b>9.2</b> Using GitHub</a></li>
+<li class="chapter" data-level="9.3" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#think-python-textbook"><i class="fa fa-check"></i><b>9.3</b> Think Python Textbook</a></li>
+<li class="chapter" data-level="9.4" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#all-about-circuits-textbook"><i class="fa fa-check"></i><b>9.4</b> All About Circuits Textbook</a></li>
+<li class="chapter" data-level="9.5" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#onshape-account-setup"><i class="fa fa-check"></i><b>9.5</b> OnShape Account Setup</a></li>
+<li class="chapter" data-level="9.6" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#controlling-the-raspberry-pi-remotely"><i class="fa fa-check"></i><b>9.6</b> Controlling the Raspberry Pi Remotely</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#setting-up-ssh-for-windows"><i class="fa fa-check"></i><b>9.6.1</b> Setting up SSH for Windows</a></li>
+<li class="chapter" data-level="9.6.2" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#setting-up-ssh-for-mac-or-linux"><i class="fa fa-check"></i><b>9.6.2</b> Setting up SSH for Mac or Linux</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Robotics Engineering</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="mechanical-design" class="section level1">
+<h1><span class="header-section-number">Section 4</span> Mechanical Design</h1>
+<p>The inspiration for this course at Windsor High School is actually a course in the Engineering College at Colorado State Unversity called <a href="https://www.engr.colostate.edu/~dga/courses/mech307/" target ="_blank">Mechatronics and Measurement Systems</a>. That course is meant to be one of the capstone courses in the mechanical engineering degree at CSU. In order to complete our capstone project, we will all need to have a solid understanding of the parts of a mechatronic or robotic system.</p>
+<div id="parts-of-a-robotic-system" class="section level2">
+<h2><span class="header-section-number">4.1</span> Parts of a Robotic System</h2>
+<p>We need to be able to determine what components will be necessary in our robot design. To do this, an overview of the various part types is necessary. At the end of this chapter, you will create a design on <a href="https://www.onshape.com/" target ="_blank">OnShape</a> which will serve as the basis for your capstone project next semester. Use this as an opportunity to start thinking about what you will do in creating a robotic system.</p>
+<u>Steps to prepare for this work</u>
+<ol>
+<li>
+Start thinking about a problem you might like to solve. Is there something at home that could be improved? For example, last year I built a solar powered Raspberry Pi controlled garden watering system. Something like that has a definite use and provides a solution for my wife and I. Now that it works, when we go on vacation we don’t worry that our garden gets watered.
+</li>
+<li>
+Look for other examples. A good place to start is the <a href="https://video-demos.colostate.edu/robotics-controls/mechatronics/projects/" target ="_blank">Student Examples from the MECH 307 Course at CSU</a>. Another good source is <a href="https://www.sparkfun.com/tutorials/category/4" target ="_blank">SparkFun Projects Examples</a>. In additon, there are many websites that have Raspberry Pi ideas.
+</li>
+<li>
+Think about what makes you excited to do this project. What would you have fun doing for four months next semester?
+</li>
+</ol>
+<p>Write down some ideas so that, you may come back to them later as you learn more</p>
+<p>Now that we have some ideas, let’s learn about the various types of parts available to us.</p>
+<div id="power-supply" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Power Supply</h3>
+<p>A major consideration is power. Most of the systems we design need to be efficient in their use of power. We are not always able to connect to an outlet. For example, home surveillance cameras are small and easy to install in many different locations. However, if we had to connect them to an AC power source, the list of possible locations for installation could be greatly reduced. The solution is a battery pack. How do we decide which battery though? A surveillance camera might need to run for weeks at a time without changing the battery. As a result, a high quality lithium ion source would probably make the most sense. The drawback to this compact and powerful design is, of course, price. These are the types of trade-offs we must consider.</p>
+<u>Power Supplies include:</u>
+<ul>
+<li>
+<a href="https://www.amazon.com/Raspberry-Power-Supply-Adapter-Charger/dp/B0719SX3GC/ref=sxts_sxwds-bia-wc-drs1_0?cv_ct_cx=raspberry+pi+power+supply&dchild=1&keywords=raspberry+pi+power+supply&pd_rd_i=B0719SX3GC&pd_rd_r=cfe19aaa-1ab3-4e25-a2bb-71db90ddbdd2&pd_rd_w=UmEqs&pd_rd_wg=lWUzP&pf_rd_p=055f7364-94db-4b93-80d6-346300592c66&pf_rd_r=TX0AEE71D4WXCBYK3ZSB&psc=1&qid=1595873393&sr=1-1-f7123c3d-6c2e-4dbe-9d7a-6185fb77bc58" target ="_blank">DC Wall adapters</a>
+</li>
+<li>
+<a hfer ="https://www.amazon.com/Battery-Holder-Barrel-Connector-Arduino/dp/B07T65WWCR/ref=sr_1_4?crid=SN27799GVMQI&dchild=1&keywords=aa+battery+pack+arduino&qid=1595873477&s=electronics&sprefix=aa+battery+pack+ardui%2Celectronics%2C177&sr=1-4" target ="_blank">Battery packs for rechargable NiMH batteries</a>
+</li>
+<li>
+<a href="https://www.robotshop.com/en/nimh-2000mah-battery-pack-hitec-connector.html" target ="_blank">Pre-built battery packs</a>
+</li>
+<li>
+<a href="https://www.amazon.com/Adafruit-Medium-Volt-Solar-Panel/dp/B01BKA1YSK" target = "_blank">Solar panels</a>
+</li>
+</ul>
+<p>As we see, there are many options and considerations. Only by determining total power needs, space and weight constraints and budget can we select the correct source. For now, consider power needs first. As you get closer to the start of your project you can narrow down your choices.</p>
+</div>
+<div id="actuators" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> Actuators</h3>
+<p>Most robots move and interact with the physical world. We will not make that distinction here although there are many who believe that this is a requirement. A robotic car system has many actuation systems. The most notable of these is the drive system. Through the wheels and transmission the motor interacts with the surface the robot is on to propel the robot. Any device creating motion in this way is an actuator. Like power supplies, actuator selection meets many criteria. A look at the <a href="https://www.robotshop.com/en/motors-actuators.html" target =_blank">RobotShop Actuator Page</a> reveals hundreds of possibilities.</p>
+<ul>
+<li>
+DC Motors
+</li>
+<li>
+Stepper Motors
+</li>
+<li>
+Servos
+</li>
+<li>
+Linear Slides
+</li>
+</ul>
+<p>From these fours types of actuators, most robotic systems may develop a way of interacting with the environment.</p>
+</div>
+<div id="sensors" class="section level3">
+<h3><span class="header-section-number">4.1.3</span> Sensors</h3>
+<p>There are even more sensor types than there are actuator types. If we brows the <a href="https://www.adafruit.com/category/35" target ="_blank">Adafruit Sensor Page</a> we see how limitless these possibilities are. For any type of sensor application there is, someone has though of a way to build it.</p>
+<p>As <a href="http://www.cs.cmu.edu/~rasc/Download/AMRobots4.pdf" target = "_blank">excerpt from a robotics text</a> explains, sensors are either proprioceptive or exteroceptive and, at the same time, either passive or active. This chart is taken from that text:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/Sensor%20Classifications.png?raw=true"></p>
+</div>
+<div id="microprocessors" class="section level3">
+<h3><span class="header-section-number">4.1.4</span> Microprocessors</h3>
+<p>For most students in this course, the Raspberry Pi will function as the microprocessor for the course. Students learn to interact with the Pi using the command line and Python. In addition, the Raspberry Pi offers many advantages over other microprocessors like Arduinos. One of the main advantages is the built in wifi capabilities. This allows for remote programming and true Internet of Things (IoT) capabilites. Still, some may choose a different processor, maybe even a different version of the Pi.</p>
+<p>A <a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/" target ="_blank">Raspberry Pi Zero W</a> is an extremely compact and low cost alternative to the Rapberry Pi 3 we use in class. It is made for low-power, compact IoT applicaitons and should be considered. While the processor speed is slower than larger Pis, it might be just the fit for your project. Compact versions of other processors are available as well. <a href="https://en.wikipedia.org/wiki/Comparison_of_single-board_microcontrollers" target ="_blank">This list</a> is quite extensive and should be considered.</p>
+</div>
+<div id="structural-parts" class="section level3">
+<h3><span class="header-section-number">4.1.5</span> Structural Parts</h3>
+<p>The skeleton of the robotic system determines the physical constraints on the design. For years now, our robotics team has dealth with this issue. Several years ago they were presented with a challenge in the competition which required their robot to climb a mountain:</p>
+<p><img src="https://lh3.googleusercontent.com/pw/ACtC-3cmpHSRe6rGTt-MiIm45DNvdX5LnQPqjeFoMLTcRDMEe-jTS-R-VCHQpOXHaIDewV3isya2OqOclK3ttuJrw_SZFTdhtLex9lYP1k0KlGzc5bqn2ezhGXwOkCdMWfAII_uaL7MYbPUcI6blbrHRMNBy=w787-h904-no?authuser=0"></p>
+<p>As we can see from the photograph, the mountain was quite daunting. The previous year, the team had advanced to the world championships and found that their robot, while the best design in Colorado, was not suited to compete with the heavier robots beyond the state. As a result they had been pushed around a bit and not been very successful. The solution to this was to weld a steel frame together and build the robot off of that. The result was a 70 pound robot! Without thinking more deeply about the design of the current year, they had hampered themselves by dealing with the previous yesr’s challenge in mind. The robot was robust and strong but could not climb the mountain. Instead, every tread system they tried to use to climb was under so much strain that it eventually broke. They would even 3D print treads made out of high strength plastics that still could not hold up to the strain. In this case, the structural parts let them down. What a great learning experience that was. All three of those students in the photo are in science and engineering programs currently in college. The one on the right, Mitchell Watson, is literally going to be a rocket scientist when he graduates for Cal Tech. Understanding these concepts of mechanical design are not only fundamental to robotics, they can lead to many great opportunities.</p>
+<p>There are many options for structural parts. Over the years, we have accumulated a wealth of parts in our program which may be checked out. In addition, we have plenty of scrap material (we hated that mountain so much that we cut it up at the end of the season and have been using it for scrap since then). After you learn how to use CAD in the next section, you will be able to design and print your own custom parts as well.</p>
+<p>The type of material matters. Begin with <a href="http://www.robotoid.com/howto/materials-for-robot-building-an-introduction.html" target="_blank">this materials guide</a> in selecting your parts. Consider using pre-built kits or components. Here is a list of companies that provide robotics parts:</p>
+<ul>
+<li>
+<a href="https://www.pitsco.com/" target = "_blank">Pitsco Education</a>: Many different types of parts from a long-time vendor
+</li>
+<li>
+<a href="https://www.revrobotics.com/" target = "_blank">REV Robotics</a>: Higher quality aluminum and high grade plastic parts
+</li>
+<li>
+<a href="https://www.gobilda.com/" target = "_blank">GoBilda</a>: Awesome parts for large applications
+</li>
+<li>
+<a href="https://8020.net/?SID=0iar947e93r0f4tpr4p5dd79g5/" target = "_blank">80/20 Inc.</a>: Incredibly versitile structural systems
+</li>
+<li>
+<a href="https://www.robotshop.com/en/robot-kits.html" target = "_blank">RobotShop</a>: If you are looking for a kit, to get started
+</li>
+<li>
+<a href="https://www.sparkfun.com/categories/31?filter_option%5Bsubcategory%5D%5B%5D=category_155&filter_price_floor=&filter_price_ceil=" target = "_blank">SparkFun</a>: Based in Niwot, you can go visit them and pick up your parts or take the tour to get some ideas
+</li>
+</ul>
+<p><br><b><i>NOTE: For any vendors, check before you buy. We have educational discounts with most all of them.</b></i></p>
+<p><b>Assignment 4.2</b><br>
+On graph paper draw a design for your expected capstone project. You should include at least three different angles for your drawing (two sides and a top). You should include dimensions and labels of each part. On a Google spreadsheet, make a list of all parts you think you might need. In a one-page typed summary describe your design.</p>
+</div>
+</div>
+<div id="computer-aided-design" class="section level2">
+<h2><span class="header-section-number">4.2</span> Computer Aided Design</h2>
+<p>Once you have your design down on paper, it is time to create it like a real mechatronics engineer. For this section you will learn to use <a href="https://www.onshape.com/" target ="_blank">OnShape</a>, a modern and full-scale computer aided design (CAD) system. OnShape was founded by two engineers at SolidWorks which is still considered the gold standard of CAD. SolidWorks comes with a hefty price tag, even for students. OnShape is free to secondary schools. As a result, we will use it. Once year learn this tool, switching to other CAD software will be relatively painless. In addition, it is entirely web based so you can use it as long as you have an internet connection and a web browser.</p>
+<p>If you have not done so already, head to the <a href="course-materials-and-instructions.html#onshape-account-setup">OnShape Account Setup</a> section of the course book. Follow those instructions. After you have done this, log on to your account and follow these instructions:</p>
+<p><u>Click on the “Learning Center Button”</u></p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/onshape_lc.PNG?raw=true"></p>
+<p><u>Select “Self-Paced Courses &gt; Learning Pathways”</u></p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/onshape_lp.PNG?raw=true"></p>
+<p><u>Select “OnShape Fundamentals: CAD”</u></p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/onshape_fun.PNG?raw=true"></p>
+<b>Assignment 4.2</b><br>
+Complete the first five courses in this learning pathway:
+<ol>
+<li>
+Navigating Onshape
+</li>
+<li>
+Introduction to Sketching
+</li>
+<li>
+Part Design Using Part Studios
+</li>
+<li>
+Multi-Part Part Studios
+</li>
+<li>
+Onshape Assemblies
+</li>
+</ol>
+
+<!-- For the examples here I am using two different terminals.  Since the students will at least start programming using the Linux termanal running the Python environment, all of the direct examples that they are expected to complete will use that.  GIMP can create screenshots which may t
+hen be directly exported to PNG format and uploaded to the hosted images repository on GitHub.  For those which may just be examples of ideas I am using PyCharm since it color codes the text.  At some point, it might be worth exploring other ways of doing this. -->
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="electrical-concepts.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="python-programming.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-mechanics.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Robotics_Engineering.pdf", "Robotics_Engineering.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

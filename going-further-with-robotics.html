@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section 8 Going Further with Robotics | Robotics Engineering</title>
+  <meta name="description" content="During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content." />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section 8 Going Further with Robotics | Robotics Engineering" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 8 Going Further with Robotics | Robotics Engineering" />
+  
+  <meta name="twitter:description" content="During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content." />
+  
+
+<meta name="author" content="Steve Cline" />
+
+
+<meta name="date" content="2020-07-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="capstone-project.html"/>
+<link rel="next" href="course-materials-and-instructions.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<div>  </div>
+<img src="WHSROBO.png" style="width:230px;height:260px;" class="center">
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#a-brief-overview-of-the-course"><i class="fa fa-check"></i><b>2.1</b> A brief Overview of the Course</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#history-of-robotics"><i class="fa fa-check"></i><b>2.2</b> History of Robotics</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="electrical-concepts.html"><a href="electrical-concepts.html"><i class="fa fa-check"></i><b>3</b> Electrical Concepts</a><ul>
+<li class="chapter" data-level="3.1" data-path="electrical-concepts.html"><a href="electrical-concepts.html#circuits"><i class="fa fa-check"></i><b>3.1</b> Circuits</a></li>
+<li class="chapter" data-level="3.2" data-path="electrical-concepts.html"><a href="electrical-concepts.html#voltage-and-current"><i class="fa fa-check"></i><b>3.2</b> Voltage and Current</a></li>
+<li class="chapter" data-level="3.3" data-path="electrical-concepts.html"><a href="electrical-concepts.html#resistance"><i class="fa fa-check"></i><b>3.3</b> Resistance</a></li>
+<li class="chapter" data-level="3.4" data-path="electrical-concepts.html"><a href="electrical-concepts.html#ohms-law"><i class="fa fa-check"></i><b>3.4</b> Ohm’s Law</a></li>
+<li class="chapter" data-level="3.5" data-path="electrical-concepts.html"><a href="electrical-concepts.html#using-a-digital-multimeter"><i class="fa fa-check"></i><b>3.5</b> Using a Digital Multimeter</a></li>
+<li class="chapter" data-level="3.6" data-path="electrical-concepts.html"><a href="electrical-concepts.html#basic-soldering"><i class="fa fa-check"></i><b>3.6</b> Basic Soldering</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="mechanical-design.html"><a href="mechanical-design.html"><i class="fa fa-check"></i><b>4</b> Mechanical Design</a><ul>
+<li class="chapter" data-level="4.1" data-path="mechanical-design.html"><a href="mechanical-design.html#parts-of-a-robotic-system"><i class="fa fa-check"></i><b>4.1</b> Parts of a Robotic System</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="mechanical-design.html"><a href="mechanical-design.html#power-supply"><i class="fa fa-check"></i><b>4.1.1</b> Power Supply</a></li>
+<li class="chapter" data-level="4.1.2" data-path="mechanical-design.html"><a href="mechanical-design.html#actuators"><i class="fa fa-check"></i><b>4.1.2</b> Actuators</a></li>
+<li class="chapter" data-level="4.1.3" data-path="mechanical-design.html"><a href="mechanical-design.html#sensors"><i class="fa fa-check"></i><b>4.1.3</b> Sensors</a></li>
+<li class="chapter" data-level="4.1.4" data-path="mechanical-design.html"><a href="mechanical-design.html#microprocessors"><i class="fa fa-check"></i><b>4.1.4</b> Microprocessors</a></li>
+<li class="chapter" data-level="4.1.5" data-path="mechanical-design.html"><a href="mechanical-design.html#structural-parts"><i class="fa fa-check"></i><b>4.1.5</b> Structural Parts</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="mechanical-design.html"><a href="mechanical-design.html#computer-aided-design"><i class="fa fa-check"></i><b>4.2</b> Computer Aided Design</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="python-programming.html"><a href="python-programming.html"><i class="fa fa-check"></i><b>5</b> Python Programming</a><ul>
+<li class="chapter" data-level="5.1" data-path="python-programming.html"><a href="python-programming.html#setting-up-the-raspberry-pi"><i class="fa fa-check"></i><b>5.1</b> Setting up the Raspberry Pi</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="python-programming.html"><a href="python-programming.html#putting-the-pi-together"><i class="fa fa-check"></i><b>5.1.1</b> Putting the Pi Together</a></li>
+<li class="chapter" data-level="5.1.2" data-path="python-programming.html"><a href="python-programming.html#controlling-the-pi-with-ssh"><i class="fa fa-check"></i><b>5.1.2</b> Controlling the Pi with SSH</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="python-programming.html"><a href="python-programming.html#the-parts-of-the-rpi-and-pinout"><i class="fa fa-check"></i><b>5.2</b> The parts of the RPi and Pinout</a></li>
+<li class="chapter" data-level="5.3" data-path="python-programming.html"><a href="python-programming.html#why-python"><i class="fa fa-check"></i><b>5.3</b> Why Python?</a></li>
+<li class="chapter" data-level="5.4" data-path="python-programming.html"><a href="python-programming.html#hello-worldand-a-little-more"><i class="fa fa-check"></i><b>5.4</b> Hello, World…and a Little More</a></li>
+<li class="chapter" data-level="5.5" data-path="python-programming.html"><a href="python-programming.html#functions"><i class="fa fa-check"></i><b>5.5</b> Functions</a></li>
+<li class="chapter" data-level="5.6" data-path="python-programming.html"><a href="python-programming.html#conditionals"><i class="fa fa-check"></i><b>5.6</b> Conditionals</a></li>
+<li class="chapter" data-level="5.7" data-path="python-programming.html"><a href="python-programming.html#iteration"><i class="fa fa-check"></i><b>5.7</b> Iteration</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="python-programming.html"><a href="python-programming.html#for-loops"><i class="fa fa-check"></i><b>5.7.1</b> <code>for</code> Loops</a></li>
+<li class="chapter" data-level="5.7.2" data-path="python-programming.html"><a href="python-programming.html#while-loops"><i class="fa fa-check"></i><b>5.7.2</b> <code>while</code> Loops</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="robotic-types.html"><a href="robotic-types.html"><i class="fa fa-check"></i><b>6</b> Robotic Types</a></li>
+<li class="chapter" data-level="7" data-path="capstone-project.html"><a href="capstone-project.html"><i class="fa fa-check"></i><b>7</b> Capstone Project</a></li>
+<li class="chapter" data-level="8" data-path="going-further-with-robotics.html"><a href="going-further-with-robotics.html"><i class="fa fa-check"></i><b>8</b> Going Further with Robotics</a><ul>
+<li class="chapter" data-level="8.1" data-path="going-further-with-robotics.html"><a href="going-further-with-robotics.html#robotics-in-higher-education"><i class="fa fa-check"></i><b>8.1</b> Robotics in Higher Education</a></li>
+<li class="chapter" data-level="8.2" data-path="going-further-with-robotics.html"><a href="going-further-with-robotics.html#supplemental-videos"><i class="fa fa-check"></i><b>8.2</b> Supplemental Videos</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html"><i class="fa fa-check"></i><b>9</b> Course Materials and Instructions</a><ul>
+<li class="chapter" data-level="9.1" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#course-lecture-notes"><i class="fa fa-check"></i><b>9.1</b> Course Lecture Notes</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#introduction"><i class="fa fa-check"></i><b>9.1.1</b> Introduction</a></li>
+<li class="chapter" data-level="9.1.2" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#electronics"><i class="fa fa-check"></i><b>9.1.2</b> Electronics</a></li>
+<li class="chapter" data-level="9.1.3" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#programming"><i class="fa fa-check"></i><b>9.1.3</b> Programming</a></li>
+<li class="chapter" data-level="9.1.4" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#robotics-concepts"><i class="fa fa-check"></i><b>9.1.4</b> Robotics Concepts</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#using-github"><i class="fa fa-check"></i><b>9.2</b> Using GitHub</a></li>
+<li class="chapter" data-level="9.3" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#think-python-textbook"><i class="fa fa-check"></i><b>9.3</b> Think Python Textbook</a></li>
+<li class="chapter" data-level="9.4" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#all-about-circuits-textbook"><i class="fa fa-check"></i><b>9.4</b> All About Circuits Textbook</a></li>
+<li class="chapter" data-level="9.5" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#onshape-account-setup"><i class="fa fa-check"></i><b>9.5</b> OnShape Account Setup</a></li>
+<li class="chapter" data-level="9.6" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#controlling-the-raspberry-pi-remotely"><i class="fa fa-check"></i><b>9.6</b> Controlling the Raspberry Pi Remotely</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#setting-up-ssh-for-windows"><i class="fa fa-check"></i><b>9.6.1</b> Setting up SSH for Windows</a></li>
+<li class="chapter" data-level="9.6.2" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#setting-up-ssh-for-mac-or-linux"><i class="fa fa-check"></i><b>9.6.2</b> Setting up SSH for Mac or Linux</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Robotics Engineering</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="going-further-with-robotics" class="section level1">
+<h1><span class="header-section-number">Section 8</span> Going Further with Robotics</h1>
+<div id="robotics-in-higher-education" class="section level2">
+<h2><span class="header-section-number">8.1</span> Robotics in Higher Education</h2>
+<p>You are taking this course because you are interested in learning about robots, obviously. You may want to pursue this subject after you leave high school as well. What does it mean to be a robotic engineer or roboticist? This is more than having an enthusiasm for the field. It means pursuing an educational path that prepares you for a profession in robotics. It also looks different depending on what you want to do with robotics. Robotics engineering is a standalone field within mechatronics. However, many fields benefit from this area of study even if it not the primare goal. One of our recent alumns, Katie Schutt, summs up her path through robotics at Windsor High School and how it helped her get to Aeronautical Engineering:</p>
+<blockquote>
+<p>WHS robotics was the high school program that probably best prepared me for life and education in college, especially as an incoming engineering student. I learned technical skills around designing and testing under the pressure of requirements and a deadline, and the necessary programming logic and proficiency. Equally important, I developed skills in public speaking, documenting the proposals and then progress of my projects, and the ability to constructively work with a team. All of these skills were heavily emphasized and required to succeed in my first semester at CU, and robotics provided the foundation for those skills to be built upon.</p>
+</blockquote>
+<p>Katie is working to become an astronaut with the goal of traveling to other planets in our solar system. The technical skills she is building will give her opportunities like this. It began in her robotics classroom at WHS.</p>
+You may not know where you want to take robotics yet. There are hundred of <a href="https://en.wikipedia.org/wiki/Outline_of_robotics#Branches_of_robotics" target ="_blank">branches of robotics</a>. All of them have some common threads. In high school some of these skills may be learned to prepare students for university level robotics:
+<ul>
+<li>
+Math
+</li>
+<ul>
+<li>
+Algebra
+</li>
+<li>
+Geometry
+</li>
+<li>
+Trigonometry
+</li>
+<li>
+Calculus
+</li>
+</ul>
+<li>
+Physics
+</li>
+<ul>
+<li>
+Dynamics
+</li>
+<li>
+Kinematics
+</li>
+</ul>
+<li>
+Computer Science
+</li>
+<ul>
+<li>
+Programming languages
+</li>
+<li>
+Computation logic
+</li>
+<li>
+Cloud Computing
+</li>
+</ul>
+<li>
+Engineering
+</li>
+<li>
+Language Arts
+</li>
+</ul>
+<p>To get on this path be sure to talk to your counselor about your goals. Feel free to ask me about this as well. We have many former students who have pursued this field and are attending colleges all over the United States. An excellent way to learn more is to attend an engineering day at <a href="https://www.engr.colostate.edu/future-students/engineering-exploration-day/" target ="_blank">Colorado State University</a> or <a href="https://www.colorado.edu/engineering/admissions/visit-us#block-bean-block-section-prospective-even-0" target ="_blank">the University of Colorado in Boulder</a>. Most high school students find that a visit to campus makes the potential college experience more attainable and realistic.</p>
+</div>
+<div id="supplemental-videos" class="section level2">
+<h2><span class="header-section-number">8.2</span> Supplemental Videos</h2>
+<caption>
+<h3>
+The Genius of George Boole
+</h3>
+</caption>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/Hljir_TyTEw">
+</iframe>
+<p><br></p>
+<caption>
+<h3>
+Shakey:Experiments in Robotic Planning and Learning (1972)
+</h3>
+</caption>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/GmU7SimFkpU">
+</iframe>
+<p><br></p>
+<caption>
+<h3>
+BBC Documentary - Hyper Evolution : Rise Of The Robots (Part 1)
+</h3>
+</caption>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/hRuBZLe8vfs">
+</iframe>
+<p><br></p>
+<caption>
+<h3>
+BBC Documentary - Hyper Evolution : Rise Of The Robots (Part 2)
+</h3>
+</caption>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/9SA2WLDB65A">
+</iframe>
+<p><br></p>
+<caption>
+<h3>
+BBC Documentary - Hyper Evolution : Rise Of The Robots (Part 3)
+</h3>
+</caption>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/D22UOL-ncgw">
+</iframe>
+<p><br></p>
+<caption>
+<h3>
+Robots that fly … and cooperate | Vijay Kumar
+</h3>
+</caption>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/4ErEBkj_3PY">
+</iframe>
+<p><br></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="capstone-project.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="course-materials-and-instructions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/07-further.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Robotics_Engineering.pdf", "Robotics_Engineering.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

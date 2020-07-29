@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section 5 Python Programming | Robotics Engineering</title>
+  <meta name="description" content="During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content." />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section 5 Python Programming | Robotics Engineering" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 5 Python Programming | Robotics Engineering" />
+  
+  <meta name="twitter:description" content="During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content." />
+  
+
+<meta name="author" content="Steve Cline" />
+
+
+<meta name="date" content="2020-07-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="mechanical-design.html"/>
+<link rel="next" href="robotic-types.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<div>  </div>
+<img src="WHSROBO.png" style="width:230px;height:260px;" class="center">
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#a-brief-overview-of-the-course"><i class="fa fa-check"></i><b>2.1</b> A brief Overview of the Course</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#history-of-robotics"><i class="fa fa-check"></i><b>2.2</b> History of Robotics</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="electrical-concepts.html"><a href="electrical-concepts.html"><i class="fa fa-check"></i><b>3</b> Electrical Concepts</a><ul>
+<li class="chapter" data-level="3.1" data-path="electrical-concepts.html"><a href="electrical-concepts.html#circuits"><i class="fa fa-check"></i><b>3.1</b> Circuits</a></li>
+<li class="chapter" data-level="3.2" data-path="electrical-concepts.html"><a href="electrical-concepts.html#voltage-and-current"><i class="fa fa-check"></i><b>3.2</b> Voltage and Current</a></li>
+<li class="chapter" data-level="3.3" data-path="electrical-concepts.html"><a href="electrical-concepts.html#resistance"><i class="fa fa-check"></i><b>3.3</b> Resistance</a></li>
+<li class="chapter" data-level="3.4" data-path="electrical-concepts.html"><a href="electrical-concepts.html#ohms-law"><i class="fa fa-check"></i><b>3.4</b> Ohm’s Law</a></li>
+<li class="chapter" data-level="3.5" data-path="electrical-concepts.html"><a href="electrical-concepts.html#using-a-digital-multimeter"><i class="fa fa-check"></i><b>3.5</b> Using a Digital Multimeter</a></li>
+<li class="chapter" data-level="3.6" data-path="electrical-concepts.html"><a href="electrical-concepts.html#basic-soldering"><i class="fa fa-check"></i><b>3.6</b> Basic Soldering</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="mechanical-design.html"><a href="mechanical-design.html"><i class="fa fa-check"></i><b>4</b> Mechanical Design</a><ul>
+<li class="chapter" data-level="4.1" data-path="mechanical-design.html"><a href="mechanical-design.html#parts-of-a-robotic-system"><i class="fa fa-check"></i><b>4.1</b> Parts of a Robotic System</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="mechanical-design.html"><a href="mechanical-design.html#power-supply"><i class="fa fa-check"></i><b>4.1.1</b> Power Supply</a></li>
+<li class="chapter" data-level="4.1.2" data-path="mechanical-design.html"><a href="mechanical-design.html#actuators"><i class="fa fa-check"></i><b>4.1.2</b> Actuators</a></li>
+<li class="chapter" data-level="4.1.3" data-path="mechanical-design.html"><a href="mechanical-design.html#sensors"><i class="fa fa-check"></i><b>4.1.3</b> Sensors</a></li>
+<li class="chapter" data-level="4.1.4" data-path="mechanical-design.html"><a href="mechanical-design.html#microprocessors"><i class="fa fa-check"></i><b>4.1.4</b> Microprocessors</a></li>
+<li class="chapter" data-level="4.1.5" data-path="mechanical-design.html"><a href="mechanical-design.html#structural-parts"><i class="fa fa-check"></i><b>4.1.5</b> Structural Parts</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="mechanical-design.html"><a href="mechanical-design.html#computer-aided-design"><i class="fa fa-check"></i><b>4.2</b> Computer Aided Design</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="python-programming.html"><a href="python-programming.html"><i class="fa fa-check"></i><b>5</b> Python Programming</a><ul>
+<li class="chapter" data-level="5.1" data-path="python-programming.html"><a href="python-programming.html#setting-up-the-raspberry-pi"><i class="fa fa-check"></i><b>5.1</b> Setting up the Raspberry Pi</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="python-programming.html"><a href="python-programming.html#putting-the-pi-together"><i class="fa fa-check"></i><b>5.1.1</b> Putting the Pi Together</a></li>
+<li class="chapter" data-level="5.1.2" data-path="python-programming.html"><a href="python-programming.html#controlling-the-pi-with-ssh"><i class="fa fa-check"></i><b>5.1.2</b> Controlling the Pi with SSH</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="python-programming.html"><a href="python-programming.html#the-parts-of-the-rpi-and-pinout"><i class="fa fa-check"></i><b>5.2</b> The parts of the RPi and Pinout</a></li>
+<li class="chapter" data-level="5.3" data-path="python-programming.html"><a href="python-programming.html#why-python"><i class="fa fa-check"></i><b>5.3</b> Why Python?</a></li>
+<li class="chapter" data-level="5.4" data-path="python-programming.html"><a href="python-programming.html#hello-worldand-a-little-more"><i class="fa fa-check"></i><b>5.4</b> Hello, World…and a Little More</a></li>
+<li class="chapter" data-level="5.5" data-path="python-programming.html"><a href="python-programming.html#functions"><i class="fa fa-check"></i><b>5.5</b> Functions</a></li>
+<li class="chapter" data-level="5.6" data-path="python-programming.html"><a href="python-programming.html#conditionals"><i class="fa fa-check"></i><b>5.6</b> Conditionals</a></li>
+<li class="chapter" data-level="5.7" data-path="python-programming.html"><a href="python-programming.html#iteration"><i class="fa fa-check"></i><b>5.7</b> Iteration</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="python-programming.html"><a href="python-programming.html#for-loops"><i class="fa fa-check"></i><b>5.7.1</b> <code>for</code> Loops</a></li>
+<li class="chapter" data-level="5.7.2" data-path="python-programming.html"><a href="python-programming.html#while-loops"><i class="fa fa-check"></i><b>5.7.2</b> <code>while</code> Loops</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="robotic-types.html"><a href="robotic-types.html"><i class="fa fa-check"></i><b>6</b> Robotic Types</a></li>
+<li class="chapter" data-level="7" data-path="capstone-project.html"><a href="capstone-project.html"><i class="fa fa-check"></i><b>7</b> Capstone Project</a></li>
+<li class="chapter" data-level="8" data-path="going-further-with-robotics.html"><a href="going-further-with-robotics.html"><i class="fa fa-check"></i><b>8</b> Going Further with Robotics</a><ul>
+<li class="chapter" data-level="8.1" data-path="going-further-with-robotics.html"><a href="going-further-with-robotics.html#robotics-in-higher-education"><i class="fa fa-check"></i><b>8.1</b> Robotics in Higher Education</a></li>
+<li class="chapter" data-level="8.2" data-path="going-further-with-robotics.html"><a href="going-further-with-robotics.html#supplemental-videos"><i class="fa fa-check"></i><b>8.2</b> Supplemental Videos</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html"><i class="fa fa-check"></i><b>9</b> Course Materials and Instructions</a><ul>
+<li class="chapter" data-level="9.1" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#course-lecture-notes"><i class="fa fa-check"></i><b>9.1</b> Course Lecture Notes</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#introduction"><i class="fa fa-check"></i><b>9.1.1</b> Introduction</a></li>
+<li class="chapter" data-level="9.1.2" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#electronics"><i class="fa fa-check"></i><b>9.1.2</b> Electronics</a></li>
+<li class="chapter" data-level="9.1.3" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#programming"><i class="fa fa-check"></i><b>9.1.3</b> Programming</a></li>
+<li class="chapter" data-level="9.1.4" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#robotics-concepts"><i class="fa fa-check"></i><b>9.1.4</b> Robotics Concepts</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#using-github"><i class="fa fa-check"></i><b>9.2</b> Using GitHub</a></li>
+<li class="chapter" data-level="9.3" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#think-python-textbook"><i class="fa fa-check"></i><b>9.3</b> Think Python Textbook</a></li>
+<li class="chapter" data-level="9.4" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#all-about-circuits-textbook"><i class="fa fa-check"></i><b>9.4</b> All About Circuits Textbook</a></li>
+<li class="chapter" data-level="9.5" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#onshape-account-setup"><i class="fa fa-check"></i><b>9.5</b> OnShape Account Setup</a></li>
+<li class="chapter" data-level="9.6" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#controlling-the-raspberry-pi-remotely"><i class="fa fa-check"></i><b>9.6</b> Controlling the Raspberry Pi Remotely</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#setting-up-ssh-for-windows"><i class="fa fa-check"></i><b>9.6.1</b> Setting up SSH for Windows</a></li>
+<li class="chapter" data-level="9.6.2" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#setting-up-ssh-for-mac-or-linux"><i class="fa fa-check"></i><b>9.6.2</b> Setting up SSH for Mac or Linux</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Robotics Engineering</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="python-programming" class="section level1">
+<h1><span class="header-section-number">Section 5</span> Python Programming</h1>
+<p>Finally! We are going to start learning how to make the Raspberry Pi control components like lights and motors and receive input from sensors. This is what will make your creations become real robots. For this unit we will refer to the <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">course programming text</a> quite often. Many of the programming problems come from the Downey text as well. For all of your assignments in this section you will start here though. Learn the basic concepts of that assignment, read more about it on the course text, go to GitHub Classroom to practice the program and finally, transfer what you have learned to the Raspberry Pi.</p>
+<p>Let’s get started by setting up the Pi and learning more about Python and it’s wide range of applications.</p>
+<div id="setting-up-the-raspberry-pi" class="section level2">
+<h2><span class="header-section-number">5.1</span> Setting up the Raspberry Pi</h2>
+<p>These procedures are for students in the <i>Robotics Engineering</i> course at Windsor High School. As such, some of the initial steps required in setting up a Raspberry Pi have already been completed. If you are using a new, out of the box, Pi refer to one of the many tutorials online.</p>
+<b>Equipment Needed:</b>
+<ul>
+<li>
+Raspberry Pi 3B+
+</li>
+<li>
+5V | 2.5A power supply
+</li>
+<li>
+32GB Micro SD card with pre-installed Linux based OS
+</li>
+<li>
+Monitor
+</li>
+<li>
+HDMI cable
+</li>
+<li>
+Keyboard
+</li>
+<li>
+Mouse
+</li>
+<li>
+Optional: Windows, iOS or Linux Computer (not a Chromebook)
+</li>
+<li>
+Connection to a LAN. In the lab this is “Mechlab”. At home it is your router.
+</li>
+</ul>
+<p><br>
+NOTE: For the initial setup we will use the monitor, keyboard and mouse. Eventually, we will only use the command line functions which will allow you to eliminate those components and control the Pi from your laptop remotely if you choose. If not, you can use the Pi as a computer itself but just enter the command line controls of the Linux terminal. Eventually, you will need to be able to do this though as we will disconnect the Pi from all physical I/O devices and make it the brains of a self-sufficient robotic system.<br></p>
+<div id="putting-the-pi-together" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> Putting the Pi Together</h3>
+<p>To begin, assemble the Pi by putting the SD card in the slot. Connect the monitor to the HDMI port, and the keyboard and mouse to the USB ports. Plug in the power cord and turn it on.<br>
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/raspberry-pi%20-%20Hardware%20installation.png?raw=true"><br></p>
+<p>(Create a custom background for the RPi and install all of the programs needed for the class.)</p>
+</div>
+<div id="controlling-the-pi-with-ssh" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> Controlling the Pi with SSH</h3>
+<p>For many, it may be easiest just to use the Raspberry Pi as a standalone computer. In order to do this one just needs to keep the Pi connected to a monitor, keyboard and mouse. One of the main advantages of this is that one can just turn on the Pi, wait for the boot sequence to finish and start programming using the terminal. Another advantage is that other programming interfaces may be used such as Notepad++ which has built in code highlighting and markup functions that make programming in Python, and other languages, easier. More advanced users might even choose to install an interface like PyCharm which has even more functions aimed at enhancing the programming experience and may be connected to Git or an online code repository like GitHub. Maybe the biggest advantage of programming from the Pi desktop environment is that a web browser may be easily used alongside the command line terminal or programming interface.</p>
+<p>Eventually though, we will all need to sever our connection to the peripherals. Imagine trying to test out a mobile robot system with the monitor still attached. When we make the switch we start interacting with the Pi through SSH (Secure Shell). This concept is not as difficult to understand as one might think. Essentially you are accessing the terminal window for the Pi through another computer using a piece of software like Putty. When both devices are connected to the same router, this is a fairly simple process. While we will not require this yet, it is strongly recommended that every student go over this process which is detailed in the section titled <a href="course-materials-and-instructions.html#controlling-the-raspberry-pi-remotely">Controlling the Raspberry Pi Remotely</a> in the last chapter of this book sometime in the first semester. The Capstone project will require this so we might as well get used to it now. Most will probably switch back and forth between using the Pi as a desktop computer and accessing it via SSH.</p>
+</div>
+</div>
+<div id="the-parts-of-the-rpi-and-pinout" class="section level2">
+<h2><span class="header-section-number">5.2</span> The parts of the RPi and Pinout</h2>
+<p>Let’s examine the parts of this tiny computer that you will be using for the rest of the year…it is really quite amazing how much can be packed on the small device.
+<br>
+<img src="https://raw.githubusercontent.com/stcline/Hosted_Images/master/Robotics_Engineering/RPi3_basic.png"><br></p>
+There are several things worth noting here about the Pi:
+<ul>
+<li>
+While it is possible to power the device with a micro USB power supply that provides only 1A of current (older Android phones use this), it is best to use the full 2-2.5A power supply, especially when we start hooking up components to the GPIO pins
+</li>
+<li>
+Be careful not to short two GPIO pins together or connect an external DC power supply incorrectly to one of the GPIO pins. These actions can damage essential components of the Pi.
+</li>
+<li>
+TBC
+</li>
+</ul>
+<p><br>
+A powerful feature of the Raspberry Pi is the row of GPIO (general-purpose input/output) pins along the top edge of the board. There are 40 pins which we can use for a wide range of robotics applications.
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/GPIO-Pinout-Diagram-2.png?raw=true">
+<br>
+It is important to remember which pins are which as the locations do not represent the GPIO labels. If you forget or cannot find this diagram, use the command line in the terminal.</p>
+<p>This is as good a place as any to start using the terminal. Before the introduction of the Apple Lisa with a graphical user interface (GUI), all computers used something like the terminal as the interface with humans. All computers still contain a terminal. The Raspberry Pi OS we are using is based on the Linux kernel so we will use Linux commands but the procedure is similar for other systems such as Windows and macOS. With the Raspberry Pi powered on press CTRL+ALT+T to open a terminal session.</p>
+<p>After the terminal opens, type the following command: <code>pinout</code></p>
+<p>You should see something like this in the terminal:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/gpiozero-pinout.png?raw=true"></p>
+<p>Any of the GPIO pins can be designated (in software) as an input or output pin and used for a wide range of purposes. We will use them to send and receive electrical signals. Two 5V pins and two 3V3 pins are present on the board, as well as a number of ground pins (0V), which are unconfigurable. The remaining pins are all general purpose 3V3 pins, meaning outputs are set to 3V3 and inputs are 3V3-tolerant.</p>
+<p>A GPIO pin designated as an output pin can be set to high (3V3) or low (0V). In addition pins GPIO12, GPIO13, GPIO18, GPIO19 may also be used with Pulse Width Modulation (PWM). A GPIO pin designated as an input pin can be read as high (3V3) or low (0V). This is made easier with the use of internal pull-up or pull-down resistors. Pins GPIO2 and GPIO3 have fixed pull-up resistors, but for other pins this can be configured in software.</p>
+<p>It is possible to control GPIO pins using a number of programming languages and tools. For this course we will use Bash, the scripting language of Linux, and Python.</p>
+<b><i>NOTE: Before you start your first programming assignment realize that in order to progress in this course you must fully learn the information in the text. If you skim or rush through you might be able to get many answers on the chapter quiz correct but you will miss many of the points. Programming is hard and learning to program is as well. It does not mean it is impossible. It just requires work. Take your time and make sure you are understanding what you read. If not, do the following:
+<ol>
+<li>
+Re-read the section.
+</li>
+<li>
+Ask someone else in the class for clarification.
+</li>
+<li>
+Google your question
+</li>
+<li>
+Ask your instructor
+</li>
+</ol>
+<p>This is good advice for all courses, especially the further you go in school. Many of you will go so far in college that you basically stop taking classes and just learn on your own for the sake of understanding something.</b></i></p>
+<p><b>Assignment 5.2</b><br>
+For this assignment you will learn some basic commands and functions in Linux and how to find out how to use them.
+Open up a terminal on your Raspberry Pi as before.</p>
+<p>Type the following:
+<br><code>help</code><br></p>
+<p>This is a list of all the built in functions that come with this version of Linux. As you add more packages and create your own functions this list will get larger. If you scroll to the top your see this message:
+<code>Type 'help name' to find out more about the function 'name'.</code>
+Let’s try it. One of the functions you will use fairy often is <code>cd</code>.</p>
+Type <code>help cd</code> and answer the following questions from the information on the screen:
+<ol>
+<i>
+<li>
+In your own words that you understand, what does this function do? (You may need to Google some of the terms like “directory” to understand what that term means in Linux)
+</li>
+<li>
+If you type</i> <code>cd Desktop</code> <i>what do you think will happen?
+</li>
+</i>
+</ol>
+<p>Now call up the help information for the function <code>if</code>.<br>
+<i>Why would we ever use this function? Again, you might need to do a little research to understand the vocabulary here.</i></p>
+<p>Write down or type your answers so we can discuss them in class next time.</p>
+</div>
+<div id="why-python" class="section level2">
+<h2><span class="header-section-number">5.3</span> Why Python?</h2>
+<p>It is worth spending a little time discussing the reasons why Python will be the chosen operating system for this course. Prior to Fall 2020, the course utilized the Arduino UNO as the microprocessor for the robotics systems. The Arduino is also a versatile, fully programmable microcomputer with input and output pins capable of producing and detecting low DC voltages. It utilizes the C++ programming language. There were a few limitations, however, with the Arduino UNO.</p>
+<p>The biggest advantage of the Pi is the programming interface. Since the Pi is essentially a small Linux computer, applications and environments that function on Linux also function on the Pi. The default scripting language on Linux is called Bash. When you called up the <code>pinout</code> for the Raspberry Pi earlier, you were using Bash. It is a powerful command line interface. Why not just use Bash instead of learning another language within the Linux shell? The main reason for this is Python’s usefulness outside of this class. We know from past experience that almost all of our Robotics Engineering students will go on to some kind of technical field of study in college. While those do not all go in to robotics, they all need to learn new languages. Python is about the most useful language one can learn in high school if planning to go on to a technical degree in college like engineering, computer science, data science or machine learning as well as almost any natural science field of study. It is powerful, easy to learn and widely used. The most recent StackOverflow survey ranked Python 3rd most popular among users. By learning this language, you will be more prepared to take on the challenges of a field of study in college related to robotics. Since one of the main objectives of our program is to help students prepare for post-secondary STEM fields of study, Python is an easy choice.</p>
+<p>Python is also an interpreted language instead of a compiled language. What is the difference? In order to get a compiled language to run on a computer, the additional step of compiling it into machine code must take place before the device will run the commands of the program. With an interpreted language, a program or virtual machine running on the device (In this case, the Python environment installed on the Raspberry Pi OS) interprets the script written by the programmer directly into machine code. This is a faster process than running a compiled language like C++. Other interpreted languages include Ruby, Java and Perl and good old BASIC (Which many of us adult programmers learned when we were younger on our Commodore 64 or Apple IIe computers). This structure makes Python faster to learn.</p>
+<p>There are other advantages to the switch to the Pi. The first advantage that the Pi has over the UNO is an onboard wireless internet connection. The Pi can connect to other devices using either 2.4GHz or 5GHz frequencies as well as Bluetooth. The current version also includes a Power over Ethernet (PoE) capability. Making the switch to the Raspberry Pi will allow for more seamless IOT (Internet of Things) activities without the need for an additional board. Second, the Raspberry Pi can actually function like a computer. We can modify the OS easily by modifying the micro SD card used as RAM on the computer.</p>
+</div>
+<div id="hello-worldand-a-little-more" class="section level2">
+<h2><span class="header-section-number">5.4</span> Hello, World…and a Little More</h2>
+<p>It is a tradition in in programming to test out one’s ability to program in any language by creating a program called “Hello, World!”. This dates back to 1974 at Bell Labs. The actual C language code that was written was:</p>
+<p><code>main( ) {         printf("hello, world\n"); }</code></p>
+<p>In our case, we will do something very similiar. The first program we write will do the same as that one written in 1974. Open a terminal window by pressing CTRL+ALT+T. This will open a window that looks like this:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/terminal.png?raw=true"></p>
+<p>In order to run a command in Python through the terminal we need to set up the Python environment. Type this command into the terminal:</p>
+<p><code>python3</code></p>
+<p>This will show a message like this:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/pyprompt.PNG?raw=true"></p>
+<p>You know that you are able use Python commands when you get the <code>&gt;&gt;&gt;</code> prompt. This is universal for all Python editors and the specific prompt for Python. We will try two methods of the “Hello, World!” program. First, we will use the print command. Type the following command into the interpreter:</p>
+<p><code>print ("Hello, World!")</code></p>
+<p>The quotation marks signify that we want to literally display what is directed by the <code>print</code> statement. Try it without the quotes to see what happens. This should produce something like this:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/synerror.PNG?raw=true"></p>
+<p>This is your first error message.</p>
+<p><b>Assignment 5.4</b><br>
+Read the chapter from <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a> titled, “Chapter 1 - The way of the program”. While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before. Follow along with the examples from the text as you go. This will help you learn Python more quickly. When you are done reading the chapter complete exercises 1 and 2 at the end of the chapter on your own to make sure you understand what you read. If not, see the Note above.</p>
+</div>
+<div id="functions" class="section level2">
+<h2><span class="header-section-number">5.5</span> Functions</h2>
+<p>As <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a> states,</p>
+<blockquote>
+<p>In the context of programming, a function is a named sequence of statements that performs a computation. When you define a function, you specify the name and the sequence of statements. Later, you can “call” the function by name.</p>
+</blockquote>
+<p>Let’s take a look at this sequentially:</p>
+<p><b>First</b>, <i>define</i> a function. <b>Second</b>, <i>call</i> the function.</p>
+<p>What does this look like?</p>
+<p>Open the Python environment window and <i>define</i> your function like this:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/function.png?raw=true"></p>
+<p>Then we <i>call</i> the function like this:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/function_call.png?raw=true"></p>
+<p>So, what happened here? We <i>defined</i> the function <code>say_hello()</code> . Then, we <i>called</i> the function and passed a <i>parameter</i> into the function. Can you tell what the parameter is?</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/function_def_call.png?raw=true"></p>
+<p>Why do we need to know how to use functions?</p>
+<p>The first reason is that the standard Python 3 library is filled with functions. When you type the command <code>print ("Hello, World!")</code> you are calling the built in Python <code>print()</code> function. As you read through the chapter on functions you will see that there are many other examples of useful functions packed into Python.</p>
+<p>The second reason is to make your programs easier to use. For example, let’s say you make a robot that needs to follow this pattern as it drives alone a course. There are many reasons why you might need to do something like this. Maybe the problem to solve is navigating around obstacles. Maybe the robot needs to map a facility that humans cannot get into because of hazardous conditions like radiation. Maybe your robotics teacher just wants you to demonstrate you can use functions. At any rate, functions will make your job as a programmer eaiser. Here is the path the robot will take:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/COURSE.png?raw=true"></p>
+<p>How many times does the robot need to make a 90 degree left turn? (nine) Here is an example of how we could execute that turn using Python and our Raspberry Pi (Don’t worry about the syntax now, we will get there.)</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/left_turn.png?raw=true"></p>
+<p>As you will learn, there are other commands that need to be used to set up this program but these four lines are what actually make the Raspberry Pi control the left and right wheels of the robot so that the right wheel moves forward for two seconds while the left wheel stays fixed. This will make the robot turn left. If the two seconds is the correct amount of time, it will make a 90 degree turn.</p>
+<p>Think about writing the program to just make the robot drive around. You would need to replicate this code nine times. You probably would not retype it nine times. Instead you would copy and paste it. This is known as <a href="https://www.pcmag.com/encyclopedia/term/brute-force-programming" target ="_blank">brute force programming</a>. There are many reasons not to do this. The biggest reason has to do with the third line in our left turn program. What if two seconds is not exactly right? If that is a slight overturn then the robot will go off course with every turn which means we need to go back in and change that value on every <code>sleep()</code> function. What if the battery on the robot is at a different charge level from one day to the next? Again, we will need to change nine lines of code. Remember, we humans are not very good at repetitive tasks. That is what we use computers for - to do things over and over. Why not let the computer do the repetitive stuff?</p>
+<p>Instead, let’s make a function called <code>left_turn()</code> like this:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/def_left_turn_.png?raw=true"></p>
+<p>And call it nine times throughout the program with the command <code>left_turn(2)</code> . If we found that it actually takes three seconds instead of two to execute a 90 degree turn then we would just need to change the parameter we pass to the function, represented by the variable <code>sleep_time</code>.</p>
+<p>In that case, the call would look like this: <code>sleep_time(3)</code>. We could even make things simpler yet by defining a variable at the beginning of the program to represent the number of seconds we want to sleep during the turn - something like <code>turn_sleep_time = 2</code> . Then, we would call the function like this:</p>
+<p><code>left_turn(turn_sleep_time)</code></p>
+<p>Now, every time we change the variable <code>turn_sleep_time</code> we are changing the parameter passed to the function everywhere in the program. We have gone from changing nine different lines of code to changing just one. This gets really impressive when we think about all the right turns we have to make as well. See how functions are an integral part of robotics? Every modern programming language uses functions. Once you learn it for Python you can use it in other languages as well with only minor changes to syntax.</p>
+<p>If we write programs that need to repeat a process nine times, functions save us a lot of work and potential errors. If we need our robot to do something nine <i>hundred</i> times or nine <i>million</i> times we have to use them. Now let’s spend some time learning more about the functions built in to Python using <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a>:</p>
+<p><b>Assignment 5.5</b><br>
+Read the chapter from <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a> titled, “Chapter 3 - Functions”. While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before. Follow along with the examples from the text as you go. This will help you learn Python more quickly. When you are done reading the chapter complete exercises 1, 2 and 3 at the end of the chapter on your own to make sure you understand what you read. If not, see the Note above.</p>
+</div>
+<div id="conditionals" class="section level2">
+<h2><span class="header-section-number">5.6</span> Conditionals</h2>
+<p>Besides completing repetitive tasks for us humans, robots need to be able to make decisions based on the condition of their environment. Later, we will learn how to use sensors to understand what is happening in a robot’s environment. First, we will learn how conditional statements work in Python. If you have not already done so, it might be helpful to get a little background on computer logic. The inventor of the logical system we use in robotics was George Boole. There is a video in the <a href="going-further-with-robotics.html#supplemental-videos">Supplemental Videos</a> section of this book about his contributions to the field.</p>
+<p>For now, we will concern ourselves with some basic <i>logical</i> or <i>Boolean</i> operators. These are different than mathematical operators. When we write the following statement using mathematical operators:</p>
+<p><code>x = 6</code></p>
+<p>we are making a statement that the variable <code>x</code> is <i>equal to</i> the integer 6. By contrast, when we use the same operator (=) in logical math we are <i>asking</i> “Is one equal to the other?” We script that questions like this:</p>
+<p><code>x == 6</code></p>
+<p>Notice that we use 2 = signs instead of one. This is not a typo. In fact, it is universal across many programming languages. Instead of declaring <i>x is equal to 6</i>, it is asking <i>Is x equal to 6?</i> What are the possible answers to this question? For the answer, read section 5.2 of <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a>.</p>
+Notice that there are many other <i>logical (aka relational)</i> operators. We can use these operators which return a value of true or false to help our robots make decisions. To do this we use functions like the <code>if()</code> statement. Let’s try it out using another Python function <code>len()</code>. We will create a function that determines if a word is longer than seven letters. If so, a message will be displayed saying so. If not, a different message will be displayed. Before you read how to do this, see if you can figure it out. Follow these steps using the textbook as a guide:
+<ol>
+<li>
+Define your function and pass a parameter through that is the word you are going to test.
+</li>
+<li>
+Write a conditional statement using the <code>len()</code> Python function to determine the length of the word.
+</li>
+<li>
+Use the <code>print()</code> function to return a statement that says if it is or is not a long word (greater than seven letters long).
+</li>
+<li>
+See if you can include the word in the message returned by the function
+</li>
+</ol>
+<p>Here is one way to do it:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/conditional_long_word.png?raw=true"></p>
+<p>Notice that we pass the word to the function by using the parameter <code>word</code> which then stores the string representing our word as a variable. The if statement checks the length of the word using the <code>len()</code> function which returns an integer equal to the number of alphanumeric characters in a string (our word). If that value is <i>greater than or equal to</i> nine, one message is printed. Since the only other possibility for the length of this word (if it is not greater than or equal to nine) is that it is less than nine letters, we can use the <code>else</code> function to print a different message. Try it out now by typing this function into the terminal under the Python environment and calling the function using different words. You will probably get some “Traceback” errors the first time you do but stick with it. When you are done compare your result to the results below:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/long_word_call.png?raw=true"></p>
+<p>Think of the possibilities now. What could your robot do with this new power! If we go back to our example in the previous section in which our robot had to navigate around obstacles by turning 90 degrees at a time we can see some interesting solutions. If we could use a compass sensor to determine the angle of our robot in relation to magnetic north, we could use conditional statments to turn the robot. Instead of trying to figure out exactly how long it takes for the robot to turn 90 degrees, we could write a script that waited until the angle in relation to magnetic north changed by 90 degrees. We could even do this with one function. It might look something like this:</p>
+<!-- This needs to be fixed for logical errors -->
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/turn_90_deg.PNG?raw=true"></p>
+<p>This is a lot to take in for a new programmer so let’s briefly go over this function. When it is called we put in a value for direction. The possible correct values are “left” and “right”. If the direction is “right” the left wheel moves until the angle of the robot is equal to the desired angle. If “right” is passed to the function the opposite happens. Just in case the human mispells the word or puts something else in a third print statement is used to tell them that their input is not valid. We will get to this process later in the course.</p>
+<p><b>Assignment 5.6</b><br>
+Read the chapter from <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a> titled, “Chapter 5 - Conditionals”. While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before. Follow along with the examples from the text as you go. This will help you learn Python more quickly. When you are done reading the chapter complete exercises 1, 2 and 3 at the end of the chapter on your own to make sure you understand what you read. If not, see the Note above.</p>
+</div>
+<div id="iteration" class="section level2">
+<h2><span class="header-section-number">5.7</span> Iteration</h2>
+<p>There are many reasons to use iteration in programming. The most straightforward reason is to do a spedified action a certain number of times. Imagine you are designing a robotic NASCAR driver. This would be the perfect place for iteration. In a NASCAR race the driver makes the same left turns hundreds of times. Considering one of the advantages of robots is that they can perform tasks that humans find boring or too repetitive, our robot NASCAR driver would thrive in this environment making the same left turns over and over for hours.</p>
+<p>We will approach iteration by learning two programming concepts: <code>for</code> loops and <code>while</code> statements. Each is useful in various situations. Sometimes they are interchangable depending on the problem being solved. One uses Boolean logic and the other does not. Let’s start with the <code>for</code> loop.</p>
+<div id="for-loops" class="section level3">
+<h3><span class="header-section-number">5.7.1</span> <code>for</code> Loops</h3>
+<p>Unitl now, everything we have done, we have done once. Most of the time though, our robots will need to do things repeatedly until a desired outcome is reached. An example could be that our robots collect data from a website over the course of several hours. One of my home automation projects was to build a solar powered garden watering system for my wife’s garden. This is very much a robotics application as we wanted to make sure water is delivered consistently every day even when we were gone on vacation. One of the challenges though was that sometimes it rains in the summer, ususally at night. If it rains enough the night before there is no need to water the next morning. As humans we would just think, “How much did it rain yesterday (if it did at all)?” and make our decision to water that morning. A robot needs clear rules though to follow. In this case, after a lot of trial and error, I decided that it was best to check the weather conditions between 4:00 pm and the time the watering system came on in the morning. That way, if enough rain had fallen there was no need to water the garden. I decided to check the weather forcast using <a href="https://openweathermap.org/" target ="_blank">openweathermap.org</a>. Every 15 minutes between 4:00 pm and 8:00 am the Raspberry Pi would “scrape” the current weather data off the website, “parse” out the current weather condition and record it in a csv file. To do this I used something that looked like this:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/collect_weather.PNG?raw=true"></p>
+<p>Don’t worry too much about the details of this function called <code>collect_weather()</code>. Instead focus on the line that begins with the word <code>for</code>. This is one way to use a <code>for</code> loop to iterate a process (checking the weather). I know that I want to check the weather over the course of 15 hours every 15 minutes (four times an hour). This loop will start at 4:00 pm and run 60 times. During the loop, the Pi checks the weather and records the data in a file then sleeps for 15 minutes (900 seconds). This is a very complicated script so let’s try something simpler using our Raspberry Pi and the Python environment.</p>
+<p>Open a ternminal and start the Python environment as before. Type the following lines:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/for_loop.png?raw=true"></p>
+<p>This <code>for</code> loop will count to five, updating the value of <code>x</code> each time and print <code>x</code>. Try it out by hitting enter to get this result:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/for_loop_result.png?raw=true"></p>
+<p>Notice that, while the loop ran five times, the value of <code>x</code> was not five at the end. You can see why. In computer science we generally start counting at zero instead of one. As a result the <code>range()</code> function used in a <code>for</code> loop ends its final iteration at one less than the value passed to the function, in this case four instead of five. Remember this for future scripts.</p>
+<p>There are other ways to use <code>for</code> like iterating over lists. We will get to those later in our course. For now, explore this method by completing the next assignment.</p>
+<p><b>Assignment 5.7.1</b><br>
+Read sections 1-3 of chapter 4 from <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a>. While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before. Follow along with the examples from the text as you go. This will help you learn Python more quickly. When you are done reading the chapter complete exercises in section 4.3 on your own to make sure you understand what you read. If not, see the Note above.</p>
+</div>
+<div id="while-loops" class="section level3">
+<h3><span class="header-section-number">5.7.2</span> <code>while</code> Loops</h3>
+<p>Our last introductory programming concept is a different kind of loop. Sometimes, the programmer does not know how many iterations will be necessary to solve the problem. For example, from the previous description of a Raspberry Pi based watering system for a garden, I did not know when I would stop using the system. At the end of the season after the first freeze we would have no more need to water. At that point, we would just shut it down and take the electronics in for the winter. Until then, I needed it to keep going. As a result, I used one of the simplest loops which is written like this:</p>
+<p><code>while True:</code></p>
+<p><code>while</code> loops run as long as the condition being tested is true. In this case, I am saying do everything in the loop as long as true is true. This will be true forever (or until I unplug the Raspberry Pi for the season). There are many other ways to use <code>while</code> loops but the basic concept is the same - keep doing these things until the condition is no longer true. For example, let’s say you are building that robotic NASCAR system mentioned earlier. If you wanted to keep the car going until the end of the race you could say something like this:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/while_NASCAR.png?raw=true"></p>
+<p>This extremely oversimplified script basically says, we start the race at zero laps. <code>if</code> we do something that means we have completed a lap, add one to the total laps. So, after the finish line is crossed the first time, laps gets increased by one. <code>while</code> laps is less than or equal to 500 (the end) keep driving.</p>
+<p>To understand this more, complete the next assignment.</p>
+<p><b>Assignment 5.7.2</b><br>
+Read the chapter from <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a> titled, “Chapter 7 - Iteration”. While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before. Follow along with the examples from the text as you go. This will help you learn Python more quickly. When you are done reading the chapter complete exercises 1 and 2 at the end of the chapter on your own to make sure you understand what you read. If not, see the Note above.</p>
+<!-- ## Sensing the Environment -->
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="mechanical-design.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="robotic-types.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-programming.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Robotics_Engineering.pdf", "Robotics_Engineering.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
